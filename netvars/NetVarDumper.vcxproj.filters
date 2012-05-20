@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\NetVar">
+      <UniqueIdentifier>{d91fb69c-c2e0-4f0c-af3b-cebeba5d8f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hook">
+      <UniqueIdentifier>{f421a9a8-585e-4598-a695-27b33ab3fb03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\NetVar">
+      <UniqueIdentifier>{d35f4819-0c8d-412b-b85e-ccf24914061a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Required">
+      <UniqueIdentifier>{0669643c-2e2a-4323-9ae6-d9bc163f9eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hook">
+      <UniqueIdentifier>{9624b40c-19e2-40d7-80d8-6361515d6449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{4f47045a-e5c0-4ddf-a79b-d044e474ac93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\NetVars.cpp">
+      <Filter>Source Files\NetVar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DLLMain.cpp">
+      <Filter>Source Files\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Hook.cpp">
+      <Filter>Source Files\Hook</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\NetVars.h">
+      <Filter>Header Files\NetVar</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Required.h">
+      <Filter>Header Files\Required</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hook.h">
+      <Filter>Header Files\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logger.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

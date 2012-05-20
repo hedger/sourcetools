@@ -1,0 +1,1 @@
+A simple tool for parsing TF2's item schema file from web api using boost XML readers.
