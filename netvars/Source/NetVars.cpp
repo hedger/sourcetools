@@ -480,7 +480,7 @@ namespace NetVars
 		out << "template<typename T, int size> inline T (&MakeArrayReference( PVOID thisptr, int offset ))[size] {\n	return reinterpret_cast<T(&)[size]>(*(reinterpret_cast<T*>( thisptr ) + offset));\n }\n\n";
 
 		out << "#define DECL_NETPROP(propName, propType) inline propType& propName() { static DynNetvar var(#propName, PROPPATH); return MakeReference< propType >( this, var() ); };\n";
-		out << "#define DECL_NETPROP_ARR(propName, propType, arrDim) inline propType(& propName())[arrDim] { static DynNetvar var(#propName, PROPPATH); return MakeArrayReference< propType, arrDim >( this, var() ); };\n\n";
+		out << "#define DECL_NETPROP_ARR(propName, propType, arrDim) inline propType(& propName())[arrDim] { return reinterpret_cast<T(&)[size]>(*(reinterpret_cast<T*>( (int)thisptr + offset ))); };\n\n";
 
 		if ( out.bad() || out.fail() )
 			return;
